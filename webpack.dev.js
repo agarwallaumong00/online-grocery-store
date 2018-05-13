@@ -7,6 +7,7 @@ module.exports = {
     entry: {
         app: ['./app/index.js']
     },
+    devtool: "inline-source-map",
     output: {
         filename: '[name].[hash].js',
         path: path.resolve(__dirname, 'dist')
@@ -20,7 +21,21 @@ module.exports = {
             {
                 test: /\.json$/,
                 exclude: /node_modules/,
-                loader: 'json-loader'
+                loader: 'file-loader',
+                options: {
+                    name: 'api/[name].[ext]',
+                    context: ''
+                }
+            },
+            {
+                test: /\.css$/,
+                exclude: /node_modules/,
+                loader: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.html$/,
+                exclude: /node_modules/,
+                loader: 'html-loader'
             }
         ]
     },

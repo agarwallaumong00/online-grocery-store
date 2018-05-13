@@ -1,0 +1,19 @@
+<div class="product-tile-section">
+    <div class="product-card" layout="column" layout-align="space-between">
+        <div class="product-info" ng-click="$ctrl.viewProductDetails($ctrl.product)">
+            <div class="product-image-section">
+                <img class="product-img" ng-src="{{$ctrl.product.image.thumbnail}}">
+            </div>
+            <div class="product-title">
+                <span class="truncate-title" ng-bind="$ctrl.product.name"></span>
+            </div>
+            <div class="price-section" layout="row" layout-align="space-between center">
+                <span ng-if="$ctrl.product.available" class="availablity">Available</span>
+                <span ng-if="!$ctrl.product.available" class="out-of-stock">Out-of-Stock</span>
+                <span ng-bind="$ctrl.product.price | currency:'&#8377;'"></span>
+            </div>
+        </div>
+        <md-divider class="divider"></md-divider>
+        <order-button enable-checkbox="$ctrl.enableCheckbox" order-all="$ctrl.orderAll" product="$ctrl.product"></order-button>
+    </div>
+</div>

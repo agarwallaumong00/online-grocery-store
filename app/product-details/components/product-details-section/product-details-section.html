@@ -1,0 +1,33 @@
+<div class="product-details-section" layout="column" layout-align="space-between">
+    <div>
+        <div class="product-details-title">
+            <h2 ng-bind="$ctrl.product.name"></h2>
+        </div>
+        <div class="details-section" layout="row" layout-align="space-between">
+            <div class="details-img-section">
+                <img class="details-img" ng-src="{{$ctrl.product.image.large}}">
+            </div>
+            <div class="details-info">
+                <div class="details-desc">
+                    <span ng-if="$ctrl.product.description">
+                        <b class="bold-desc">Description: </b>
+                        <span ng-bind-html="$ctrl.trustTemplate($ctrl.product.description)"></span>
+                    </span>
+                    <span class="no-desc" ng-if="!$ctrl.product.description">(No Description available) </span>
+                </div>
+                <div>
+                    <span class="availablity" ng-if="$ctrl.product.available">Available</span>
+                    <span class="out-of-stock" ng-if="!$ctrl.product.available">Out-of-Stock</span>
+                </div>
+                <div class="details-price">
+                    <span>Price: </span>
+                    <span ng-bind="$ctrl.product.price | currency:'&#8377;'"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <md-divider></md-divider>
+        <order-button enable-checkbox="$ctrl.enableCheckbox" order-all="$ctrl.orderAll" product="$ctrl.product"></order-button>
+    </div>
+</div>

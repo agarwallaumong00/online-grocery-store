@@ -1,0 +1,36 @@
+.header {
+    height: 65px;
+    background: black;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.img-logo {
+    height: 35px;
+    cursor: pointer;
+}
+
+.img-logo:focus {
+    outline: none;
+}
+
+.my-orders {
+    color: green;
+    height: 50px;
+}
+
+.search-box {
+    width: 50%;
+}
+
+.search-input-box {
+    width: 100%;
+    border: none;
+    height: 42px;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+.search-input-box:focus {
+    outline: none;
+}

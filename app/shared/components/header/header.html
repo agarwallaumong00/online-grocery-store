@@ -1,0 +1,9 @@
+<div class="header" layout="row" layout-align="space-between center">
+    <div>
+        <img class="img-logo" ng-click="$ctrl.gotoCatalogPage()" src="{{$ctrl.logo}}">
+    </div>
+    <div class="search-box">
+        <input class="search-input-box" ng-model="text" ng-change="$ctrl.filterProducts(text)" placeholder="Search for Products">
+    </div>
+    <md-button class="my-orders" ng-click="$ctrl.viewRecentOrders()">My Orders</md-button>
+</div>

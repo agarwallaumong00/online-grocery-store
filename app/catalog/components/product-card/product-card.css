@@ -1,0 +1,62 @@
+.product-tile-section {
+    padding: 10px;
+}
+
+.product-card {
+    width: 250px;
+    background: white;
+    padding: 16px;
+    box-shadow: 0 2px 4px 0 rgba(36, 48, 65, 0.2);
+}
+
+.product-image-section {
+    text-align: center;
+    height: 150px;
+}
+
+.product-img {
+    height: inherit;
+}
+
+.product-title {
+    margin: 8px 0px;
+    font-size: 14px;
+}
+
+.price-section {
+    margin: 20px 0 5px 0px;
+}
+
+.availablity {
+    font-size: 14px;
+    color: green;
+}
+
+.out-of-stock {
+    font-size: 14px;
+    color: red;
+}
+
+.divider {
+    margin: 10px 0px;
+}
+
+md-checkbox.md-default-theme.md-checked .md-icon, md-checkbox.md-checked .md-icon {
+    background: green !important;
+}
+
+.product-info {
+    cursor: pointer;
+}
+
+.product-info:focus {
+    outline: none;
+}
+
+.truncate-title {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

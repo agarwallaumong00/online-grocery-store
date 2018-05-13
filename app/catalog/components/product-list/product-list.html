@@ -1,0 +1,6 @@
+<div>
+    <catalog-sub-header category="$ctrl.category" count="$ctrl.list.length" sort-by-options="$ctrl.sortByOptions" selected-option="$ctrl.selectedOption"></catalog-sub-header>
+    <div class="product-card-section" layout="row">
+        <product-card ng-repeat="product in $ctrl.list | orderBy : $ctrl.selectedOption | filter: {name: $ctrl.filterByName}" product="product"></product-card>
+    </div>
+</div>

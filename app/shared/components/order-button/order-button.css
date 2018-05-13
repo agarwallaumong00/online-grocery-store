@@ -1,0 +1,29 @@
+.order-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-right {
+    float: right;
+}
+
+.checkbox {
+    margin: 0;
+}
+
+.order-btn {
+    background-color: green !important;
+    display: flex;
+    padding: 0px 20px;
+    text-transform: capitalize;
+}
+
+.order-text {
+    margin-left: 10px;
+}
+
+.disable-order-all-btn, .disable-order-btn {
+    background: gray !important;
+    pointer-events: none;
+}

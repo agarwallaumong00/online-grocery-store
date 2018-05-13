@@ -1,0 +1,8 @@
+.product-card-section {
+    position: absolute;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: calc(100vh - 150px);
+    overflow: auto;
+}

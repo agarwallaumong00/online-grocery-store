@@ -1,0 +1,17 @@
+.my-orders-title {
+    padding: 0px 20px;
+}
+
+.no-orders {
+    text-align: center;
+}
+
+recent-orders-sidebar {
+    width: 20%;
+    box-shadow: 0 2px 4px 0 rgba(36, 48, 65, 0.2);
+}
+
+recent-order-details {
+    width: 79%;
+    box-shadow: 0 2px 4px 0 rgba(36, 48, 65, 0.2);
+}

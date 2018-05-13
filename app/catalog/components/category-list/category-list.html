@@ -1,0 +1,14 @@
+<div class="category">
+    <md-content>
+        <md-list>
+            <md-subheader class="categories-label">Categories</md-subheader>
+            <md-list-item ng-repeat="category in $ctrl.categories"
+                        ng-class="{'selected-category': category.name === $ctrl.selectedCategory.name}"
+                        ng-click="$ctrl.onChangeCategory(category)">
+                <div>
+                    <span ng-bind="category.name"></span>
+                </div>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</div>

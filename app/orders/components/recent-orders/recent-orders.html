@@ -1,0 +1,12 @@
+<div>
+    <div class="my-orders-title">
+        <h2>My Orders</h2>
+    </div>
+    <div layout="row" layout-align="space-between" ng-if="$ctrl.orderList.length">
+        <recent-orders-sidebar order-list="$ctrl.orderList" selected-order="$ctrl.selectedOrder"></recent-orders-sidebar>
+        <recent-order-details order="$ctrl.selectedOrder"></recent-order-details>
+    </div>
+    <div class="no-orders" ng-if="!$ctrl.orderList.length">
+        <span>(No recent orders available)</span>
+    </div>
+</div>

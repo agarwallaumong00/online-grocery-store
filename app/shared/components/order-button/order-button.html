@@ -1,0 +1,14 @@
+<div class="order-section" ng-class="{'align-right': !$ctrl.orderAll && !$ctrl.enableCheckbox}">
+    <md-checkbox ng-if="$ctrl.enableCheckbox && $ctrl.product.available" class="checkbox" ng-click="$ctrl.toggleSelection($ctrl.product.id)"></md-checkbox>
+    
+    <md-button ng-click="$ctrl.orderNow()"
+            ng-class="{'disable-order-all-btn': $ctrl.getCount() === 0 && $ctrl.orderAll, 'disable-order-btn': $ctrl.product.available === false || ($ctrl.getCount() !== 0 && !$ctrl.orderAll)}"
+            class="order-btn custom-btn md-primary md-raised">
+        <i class="material-icons">shopping_cart</i>
+        <span ng-if="!$ctrl.orderAll" class="order-text">Order</span>
+        <span ng-if="$ctrl.orderAll" class="order-text">
+            <span>Order All </span>
+            <span>({{$ctrl.getCount()}})</span>
+        </span>
+    </md-button>
+</div>

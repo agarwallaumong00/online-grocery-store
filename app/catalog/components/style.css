@@ -1,0 +1,5 @@
+@import './catalog-container/catalog-container.css';
+@import './category-list/category-list.css';
+@import './product-list/product-list.css';
+@import './product-card/product-card.css';
+@import './catalog-subheader/catalog-subheader.css';

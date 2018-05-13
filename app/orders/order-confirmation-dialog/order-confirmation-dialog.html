@@ -1,0 +1,23 @@
+<md-dialog ng-cloak class="order-confirmation-dialog" layout="column" layout-align="space-between">
+    <md-toolbar class="order-confirmation-toolbar">
+        <div layout="row" layout-align="space-between">
+            <span>Order Confirmed</span>
+        </div>
+    </md-toolbar>
+
+    <md-dialog-content class="order-confirmation-content">
+        <div layout="column">
+            <span class="congratulation">Congratulations!!!</span>
+            <span class="order-summary">Your Order has been placed successfully</span>
+            <span>
+                <span>Order Id: </span>
+                <span ng-bind="$ctrl.orderId"></span>
+            </span>
+        </div>
+    </md-dialog-content>
+
+    <md-dialog-actions class="order-confirmation-actions">
+        <md-button class="custom-btn md-primary md-raised" ng-click="$ctrl.viewOrderSummary()">View Order Summary</md-button>
+    </md-dialog-actions>
+</md-dialog>
+

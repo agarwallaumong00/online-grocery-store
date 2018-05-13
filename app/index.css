@@ -1,0 +1,16 @@
+@import '~angular-material/angular-material.css';
+/* header css file */
+@import './shared/components/header/header.css';
+/* catalog css files */
+@import './catalog/style.css';
+/* orders css files */
+@import './orders/style.css';
+/* product details css files */
+@import './product-details/style.css';
+/* shared component css file */
+@import './shared/style.css';
+
+.center-content {
+    padding: 10px 30px;
+    background-color: #F6F6F7;
+}

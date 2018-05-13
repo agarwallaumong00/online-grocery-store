@@ -1,0 +1,9 @@
+.recent-order-list {
+    height: calc(100vh - 150px);
+    background: white;
+    overflow: auto;
+}
+
+.order-header {
+    background: white;
+}

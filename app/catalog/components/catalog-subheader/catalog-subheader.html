@@ -1,0 +1,17 @@
+<div class="catalog-sub-header" layout="row" layout-align="space-between center">
+    <div layout="row">
+        <span ng-bind="$ctrl.category"></span>
+        <span class="rounded-section" ng-bind="$ctrl.count"></span>
+    </div>
+    <div layout="row" layout-align="center center">
+        <md-input-container class="sort-by-container">
+            <label>Sort by</label>
+            <md-select ng-model="$ctrl.selectedOption">
+                <md-option ng-repeat="option in $ctrl.sortByOptions" ng-value="option.value">
+                    <span ng-bind="option.label"></span>
+                </md-option>
+            </md-select>
+        </md-input-container>
+        <order-button enable-checkbox="$ctrl.enableCheckbox" order-all="$ctrl.orderAll"></order-button>
+    </div>
+</div>

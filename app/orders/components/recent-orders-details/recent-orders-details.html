@@ -1,0 +1,33 @@
+<div class="recent-order-details-container">
+    <div class="order-id-section">
+        <span>Order Id:</span>
+        <span ng-bind="$ctrl.order.id"></span>
+    </div>
+    <div class="order-details-section">
+        <table class="order-table">
+            <thead>
+                <tr>
+                    <th class="width-35">Product Name</th>
+                    <th class="width-20">Quantity</th>
+                    <th class="width-20">Price</th>
+                    <th class="width-20">Total Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="product in $ctrl.order.products">
+                    <td layout="row" class="border-right">
+                        <div class="order-img-section">
+                            <img class="order-img" ng-src="{{product.image.thumbnail}}">
+                        </div>
+                        <div class="product-name">
+                            <span ng-bind="product.name"></span>
+                        </div>
+                    </td>
+                    <td class="border-right">1</td>
+                    <td class="border-right" ng-bind="product.price | currency:'&#8377;'"></td>
+                    <td class="border-right" ng-bind="product.price | currency:'&#8377;'"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

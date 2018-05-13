@@ -1,0 +1,41 @@
+.order-confirmation-dialog {
+    height: 50%;
+    width: 45%;
+    border-radius: 8px;
+}
+
+.order-confirmation-toolbar {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    background: green !important;
+}
+
+.close-dialog-btn {
+    cursor: pointer;
+}
+
+.order-confirmation-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.congratulation {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.order-summary {
+    margin-bottom: 5px;
+}
+
+.order-confirmation-actions {
+    border-top: 1px solid #E7E7EA;
+    padding: 0px 15px;
+}
+
+.custom-btn {
+    padding: 0px 10px;
+    background-color: green !important;
+    text-transform: capitalize;
+}

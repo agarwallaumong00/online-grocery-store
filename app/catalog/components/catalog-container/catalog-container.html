@@ -1,0 +1,6 @@
+<div class="catalog-container" layout="row">
+    <category-list categories="$ctrl.categories"
+                selected-category="$ctrl.selectedCategory"
+                change-category="$ctrl.filterProductsByCategory(category)"></category-list>
+    <product-list list="$ctrl.products" category="$ctrl.selectedCategory.name"></product-list>
+</div>

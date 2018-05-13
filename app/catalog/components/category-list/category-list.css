@@ -1,0 +1,12 @@
+.category {
+    padding: 10px;  
+}
+
+.category md-content, .categories-label {
+    background: #ffffff;
+}
+
+.selected-category {
+    background: lightgrey;
+    pointer-events: none;
+}
