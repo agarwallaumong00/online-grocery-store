@@ -51,3 +51,14 @@ table tbody tr td {
     border: 1px solid #E7E7EA;
     margin: 8px 0px;
 }
+
+.total-amount {
+    margin: 20px 0px;
+    padding: 0px 130px;
+    float: right;
+}
+
+.amount-title {
+    font-weight: 500;
+    margin-right: 10px;
+}

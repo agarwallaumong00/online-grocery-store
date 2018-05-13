@@ -2,6 +2,10 @@
     <div class="product-card" layout="column" layout-align="space-between">
         <div class="product-info" ng-click="$ctrl.viewProductDetails($ctrl.product)">
             <div class="product-image-section">
+                <span layout="row" class="ratings-section">
+                    <i class="rate-icon material-icons">star_rate</i>
+                    <span ng-bind="$ctrl.product.rating * 5 | number : 1"></span>
+                </span>
                 <img class="product-img" ng-src="{{$ctrl.product.image.thumbnail}}">
             </div>
             <div class="product-title">

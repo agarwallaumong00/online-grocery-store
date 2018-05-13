@@ -18,6 +18,14 @@ function productListController(catalogService) {
     {
         label: "Price (High to Low)",
         value: "-price"
+    },
+    {
+        label: "Ratings (High to Low)",
+        value: "-rating"
+    },
+    {
+        label: "Ratings (Low to High)",
+        value: "rating"
     }
     ];
     vm.selectedOption = vm.sortByOptions[0].value;
